@@ -1,0 +1,77 @@
+*{
+  --Light-Green: #bfdf32;
+  --Very-dark-blue: #15242b;
+  --Orange: #f3613c;
+}
+
+.Banner{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background: var(--Very-dark-blue);
+}
+
+.Banner h1 {
+  color: var(--Light-Green);
+  opacity: 0.3;
+}
+
+button{
+  border-radius: 30px !important;
+  background: var(--Orange) !important;
+  border: none !important;
+}
+
+
+header{
+  width: 100%;
+  z-index: 999;
+  transition: 0.3s;
+  background: var(--Very-dark-blue);
+}
+
+.scroll{
+  position: fixed;
+  background-color: #fff;
+}
+
+header .mobile, .hambuger {
+  display: none;
+}
+
+@media(max-width: 772px) {
+  header .hambuger {
+    display: block;
+  }
+  header .desktop {
+    display: none;
+  }
+  
+  header ul{
+    list-style: none;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  header .mobile .d-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute;
+    width: 100% !important;
+    left: 0;
+    padding: 3em;
+    background-color: #15242b;
+    top: 3.5em;
+    z-index: 999;
+  }
+
+  .Banner p{
+    text-align: center;
+  }
+
+  p{
+    text-align: justify;
+  }
+}
