@@ -10,12 +10,15 @@ import {
 
 // PAGES 
 import Index from './pages/Index/Index'
+import Dashboard from "./pages/Admin/Dashboard";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/admin" element={<Dashboard />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </BrowserRouter>
   )

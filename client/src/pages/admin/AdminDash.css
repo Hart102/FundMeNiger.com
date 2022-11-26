@@ -626,3 +626,20 @@ footer.footer ul {
 #alertsDropdown{
     color: #333;
 }
+.btn-circle.btn-md {
+    width: 65px;
+    height: 65px;
+    padding: 7px 10px;
+    border-radius: 45px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+@media (max-width: 768px) {
+    .ShowHide {
+        display: none;
+    }
+}
