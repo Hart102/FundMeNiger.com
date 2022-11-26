@@ -1,3 +1,4 @@
+import Button from "../Button/Button"
 
 const Banner = () => {
   return (
@@ -6,10 +7,10 @@ const Banner = () => {
     <section className='Banner py-4'>
         <div className="container py-5 px-lg-5 my-4">
             <main className='col-md-9 text-center mx-auto'>
-                <h1 className='display-3 font-weight-bold text' style={{color: '#f3613c', opacity: '1', fontWeight: '700'}}>fund your loved ones</h1>
-                <p className='text-white'>Crowdfunding platforms offer entry into real estate to a wide range of people, from experienced, accredited investors to individuals who are just starting out.</p>
+                <h1 className='display-3 font-weight-bold text' style={{color: '#f3613c', opacity: '1', fontWeight: '700'}}>FUND AND GET FUNDED</h1>
+                <p className='text-white text-capitalize'>fund and raise funds from people globally to support your projects, bills, daily needs and other things from FundMeNaija today</p>
 
-                <button className="btn font-weight-bold text-white py-3 px-5">Get started</button>
+                <Button btnText={'Get started'}/>
             </main>
         </div>
     </section>
