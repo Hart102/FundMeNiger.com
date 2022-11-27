@@ -4,6 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import ContentOne from '../../components/Content/ContentOne'
 import ContentTwo from '../../components/Content/ContentTwo'
 import ContentThree from '../../components/Content/ContentThree'
+import ContentFour from '../../components/Content/ContentFour'
 import Footer from '../../components/Footer'
 
 
@@ -14,8 +15,9 @@ const Index = () => {
     <Navbar />
     <Banner />
     <ContentOne />
-    <ContentThree />
     <ContentTwo />
+    <ContentThree />
+    <ContentFour />
     <Footer />
     </>
   )

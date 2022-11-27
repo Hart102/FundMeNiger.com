@@ -1,29 +1,42 @@
+import img from '../../asserts/images/form_bg2.webp'
+import Eligibility from './Eligibility'
+
+
 
 const ContentTwo = () => {
   return (
-    <>
-    <section style={{background: '#e9e9f2', marginTop: '2em'}}>
-      <div className="container p-lg-5 p-3">
-        <h1 className="display-6 font-weight-bold my-4" style={{color: '#413350', fontWeight: '700'}}>How to get started</h1>
-        <div className="d-lg-flex justify-content-between">
-          
-          <div className="card p-4 shadow my-3" >
-            <p>Sign up and verify your account</p>
-          </div>
+    <section className="contentTwo Banner1 d-flex justify-content-center py-5">
+        <div className="container px-lg-5">
+            <div className="title text-center mb-5">
+                <h4 className="mx-3 display-6" style={{fontWeight: '700'}}>Who is eligible ?</h4>
+                <p className='text-center'>Check who is eligible to raise or donate fund.</p>
+            </div>
+            <div className="card-container">
+                <Eligibility 
+                    title={'Individuals'} 
+                    text={'Individuals who are in need financially or medically.'}
+                />
 
-          <div className="card p-4 mx-lg-4 shadow my-3">
-            <p>Transfer funds from your local bank to your account</p>
-          </div>
-
-          <div className="card p-4 shadow my-3">
-            <p>Transfer funds from your local bank to your account</p>
-          </div>
-          </div>
-       </div>
+                <Eligibility 
+                    title={'Churches'} 
+                    text={'Churches for fund raising and offerings.'}
+                />
+                <Eligibility 
+                    title={'schools'} 
+                    text={'Schools for fund raising.'}
+                />
+                <Eligibility 
+                    title={'Small scale business'} 
+                    text={'For businesses for investment.'}
+                />
+                <Eligibility 
+                    title={'hospitals'} 
+                    text={'for medical donations like blood, body organ donors and volunteers.'}
+                />
+            </div>
+        </div>
     </section>
-    </>
   )
 }
-
+// px-lg-5
 export default ContentTwo
-// https://github.com/Hart102/crowd-funding.git

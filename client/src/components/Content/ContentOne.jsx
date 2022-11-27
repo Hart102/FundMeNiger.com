@@ -1,5 +1,5 @@
-import design1 from '../../asserts/images/correct-design.PNG'
 import design from '../../asserts/images/222.jpg'
+import Button from '../Button/Button'
 
 
 
@@ -15,10 +15,9 @@ const ContentOne = () => {
         </div>
         <div className="col-md-6">
           <h1 className="display-4" style={{color: '#15242b', fontWeight: '700'}}>Raising money have never been easy.</h1>
-          <p>We provide the best banking experience. Implementing regularly recommendations from our customers.</p>
+          <p className='my-lg-5'>We provide you with opportunity to dream and see it come to pass by helping you get the needed funding on any project, plans or other basic needs.</p>
 
-          <p>Unique market insights, deep industry knowledge, creativity, and experience to help grow your business.</p>
-          <button className="btn font-weight-bold text-white py-3 px-5">Get started</button>
+          <Button  btnText={'Get started'}/>
         </div>
       </div>
 
