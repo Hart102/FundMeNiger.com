@@ -4,9 +4,9 @@ const Banner = () => {
   return (
     <>
 
-    <section className='Banner py-4'>
-        <div className="container py-5 px-lg-5 my-4">
-            <main className='col-md-9 text-center mx-auto'>
+    <section className='Banner py-5'>
+        <div className="container py-5 px-lg-5 my-5">
+            <main className='col-md-9 text-center mx-auto my-2'>
                 <h1 className='display-3 font-weight-bold text' style={{color: '#f3613c', opacity: '1', fontWeight: '700'}}>FUND AND GET FUNDED</h1>
                 <p className='text-white text-capitalize'>fund and raise funds from people globally to support your projects, bills, daily needs and other things from FundMeNaija today</p>
 

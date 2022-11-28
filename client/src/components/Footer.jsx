@@ -5,7 +5,7 @@ const Footer = () => {
         <footer  style={{background: '#1e1e26', display: 'flex', justifyContent: 'center'}}>
             <div className="container p-4 d-lg-flex justify-content-between text-white">
                 <span className='my-5'>
-                    <div className="logo h3" style={{color: '#f3613c'}}>Fund</div>
+                    <div className="h3" style={{color: '#f3613c'}}>Fund</div>
                     <div className="social-icons">
                         <i className='fab fa-facebook fa-1x'></i>
                         <i className='fab fa-instagram fa-1x mx-4'></i>

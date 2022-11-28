@@ -1,0 +1,17 @@
+.fundraiser-details .img-container{
+    position: relative;
+    height: 400px;
+}
+
+.fundraiser-details .img-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 535px) {
+    .fundraiser-details .img-container{
+        height: 200px;
+    }
+     
+}

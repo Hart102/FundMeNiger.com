@@ -14,6 +14,10 @@ import Dashboard from "./pages/User/Dashboard";
 import CreateAccount from "./pages/Forms/CreateAccount";
 import Login from "./pages/Forms/Login";
 import AdminDash from "./pages/Admin/AdminDash";
+import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
+import Donate from "./pages/Donate/Donate";
+import Fundraisedetails from "./pages/FundraiserDetails/Fundraisedetails";
 
 const App = () => {
   return (
@@ -24,6 +28,10 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/details" element={<Fundraisedetails />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   )

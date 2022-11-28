@@ -1,0 +1,94 @@
+/************* Content two component styling  *************/
+:root{
+    --Orange: #f3613c;
+}
+
+.contentTwo .container .title {
+    position: relative;
+}
+  
+.contentTwo .container .title::after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 3px;
+    left: 47.5%;
+    border-radius: 10px;
+    background: var(--Orange);
+}
+
+.contentTwo .card-container{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    color: #e9e9f2;
+}
+
+.contentTwo .card-container .main-card .text-container{
+    transition: 0.3s !important;
+}
+
+.contentTwo .card-container .main-card:hover .text-container {
+    transform: scaleX(0);
+}
+
+  
+.contentTwo .card-container span:nth-child(1){
+    background: linear-gradient(rgb(0, 0, 0, 0.4), 
+    rgb(0, 0, 0, 0.4)), 
+    url('../../../asserts/images/individuals.jpg');
+}
+  
+.contentTwo .card-container span:nth-child(2){
+background: linear-gradient(rgb(0, 0, 0, 0.4),
+    rgb(0, 0, 0, 0.4)), 
+    url('../../../asserts/images/church.jpg');
+}
+
+.contentTwo .card-container span:nth-child(3){
+    background: linear-gradient(rgb(0, 0, 0, 0.4), 
+    rgb(0, 0, 0, 0.4)), 
+    url('../../../asserts/images/school.jpg');
+}
+
+.contentTwo .card-container span:nth-child(4){
+    background: linear-gradient(rgb(0, 0, 0, 0.4),
+    rgb(0, 0, 0, 0.4)), 
+    url('../../../asserts/images/business.jpg.crdownload');
+}
+
+.contentTwo .card-container span:nth-child(5){
+    background: linear-gradient(rgb(0, 0, 0, 0.4), 
+    rgb(0, 0, 0, 0.4)), 
+    url('../../../asserts/images/hospital.webp');
+}
+
+.contentTwo .card-container span:nth-child(1),
+.contentTwo .card-container span:nth-child(2),
+.contentTwo .card-container span:nth-child(3),
+.contentTwo .card-container span:nth-child(4),
+.contentTwo .card-container span:nth-child(5) 
+{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+@media (max-width: 772px) {
+    .contentTwo .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .contentTwo .card-container p{
+       text-align: center;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .contentTwo .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
