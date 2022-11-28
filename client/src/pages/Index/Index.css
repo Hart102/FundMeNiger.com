@@ -28,6 +28,7 @@ header{
   z-index: 999;
   transition: 0.3s;
   position: fixed;
+  top: 0;
 }
 
 .scroll{

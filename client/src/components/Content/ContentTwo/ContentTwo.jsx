@@ -9,7 +9,7 @@ import { elementSelector } from '../../Selector'
 
 const ContentTwo = () => {
 
-    //*************** Flying Effect ***************
+    // //*************** Flying Effect ***************
     const [isVissible, setIsVissible] = useState('')
     const Observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

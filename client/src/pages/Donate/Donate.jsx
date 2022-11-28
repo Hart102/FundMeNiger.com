@@ -1,32 +1,32 @@
 import '../Donate/Donate.css'
+
+
 import Navbar from '../../components/Navbar/Navbar'
-import Searchbar from '../../components/DonateComponents/SearchBar/Searchbar'
+import Searchbar from '../../components/Searchbar'
+import Fundraiser from '../../components/Fundraiser/Fundraiser'
 import Footer from '../../components/Footer'
 
-import img from '../../asserts/images/example.PNG'
 
 const Donate = () => {
   return (
-    <section className='Donate'>
-        <Navbar />
-        <div className="py-3 mx-auto">
-            <div className="category container mt-5">
-                <div className="pt-5 d-lg-flex justify-content-between align-items-baseline">
-                    <ul className="list-unstyled d-flex">
-                        <li className='mx-3'>Churches</li>
-                        <li className='mx-3'>Schools</li>
-                        <li className='mx-3'>Individuals</li>
-                        <li className='mx-3'>Business</li>
-                        <li className='mx-3'>Hospitals</li>
-                    </ul>
-                <Searchbar />
-                </div>
-            </div>
+    <section className='Donation'>
+        <Navbar backgroundColor={'white'}/>
 
+        <div className="container py-3 px-lg-5">
+            <nav className='shadow bg-white d-flex justify-content-between align-items-center px-4 py-3'>
+                <Searchbar />
+                <b className='light-cyan-color hover'>Sort</b>
+            </nav>
+
+
+
+            <Fundraiser />
+            <Fundraiser />
+            <Fundraiser />
+            <Fundraiser />
         </div>
 
-
-        {/* <img src={img} alt="" /> */}
+        <Footer />
     </section>
   )
 }
