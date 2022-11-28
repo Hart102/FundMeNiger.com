@@ -1,0 +1,1 @@
+export const elementSelector = (element) => document.querySelectorAll(element)

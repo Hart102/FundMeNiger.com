@@ -10,12 +10,14 @@ import {
 
 // PAGES 
 import Index from './pages/Index/Index'
+import Donate from "./pages/Donate/Donate";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/donate" element={<Donate />} />
       </Routes>
     </BrowserRouter>
   )

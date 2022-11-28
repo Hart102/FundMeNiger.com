@@ -1,0 +1,16 @@
+:root{
+    --Very-Dark-green: #15242b;
+    --Card-color: #1e1e26;
+}
+
+
+.Content-four{
+    background: var(--Very-Dark-green);
+    margin-top: 2em;
+}
+
+.Content-four .card{
+    flex: 1;
+    background: var(--Card-color);
+}
+  

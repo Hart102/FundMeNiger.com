@@ -1,37 +1,52 @@
 :root{
+
+  /********* Colors  *********/
   --Light-Green: #bfdf32;
   --Very-dark-blue: #15242b;
   --Orange: #f3613c;
   --White: #fff;
+
+  /********** Fonts  **********/
+  --Font-weight: 700;
 }
 
 *{
   transition: 0.3s;
+  padding: 0;
+  margin: 0;
 }
+
+h1 {
+  font-weight: var(--Font-weight) !important;
+}
+
+
 
 /************* Navbar component styling  *************/
 header{
   width: 100%;
   z-index: 999;
   transition: 0.3s;
-  background: var(--Very-dark-blue);
+  position: fixed;
 }
 
 .scroll{
-  position: fixed;
+  transition: 0.3s;
   background-color: var(--White);
 }
 
 header a{
  transition: 0.3s;
  transform: scale(1);
+ border-radius: 30px;
+ border: 1px solid transparent;
 }
 
 header a:hover{
   transition: 0.3s;
   transform: scale(0.9);
   color: var(--Orange) !important;
-  /* background: var(--Orange); */
+  border: 1px solid var(--Orange);
 }
 
 header .mobile, .hambuger {
@@ -54,6 +69,7 @@ header .mobile, .hambuger {
   opacity: 0.3;
 }
 
+
 /************* Button component styling *************/
 button{
   border-radius: 30px !important;
@@ -66,127 +82,24 @@ button:hover{
  background: #15242b !important;
 }
 
-
-/************* Content two component styling  *************/
-.contentTwo .container .title {
-  position: relative;
+/********** Animation Effect **********/
+.hidden { 
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-100%);
 }
 
-.contentTwo .container .title::after{
-  content: '';
-  position: absolute;
-  width: 5%;
-  height: 3px;
-  left: 47.5%;
-  border-radius: 10px;
-  background: var(--Orange);
-}
-
-.contentTwo .card-container{
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  color: #e9e9f2;
-}
-
-.contentTwo .card-container .main-card .text-container{
-  transition: 0.3s !important;
-}
-
-.contentTwo .card-container .main-card:hover .text-container {
-  transform: scaleX(0);
-}
-
-
-.contentTwo .card-container .main-card:nth-child(1){
-  background: linear-gradient(rgb(0, 0, 0, 0.4), 
-  rgb(0, 0, 0, 0.4)), 
-  url('../../asserts/images/individuals.jpg');
-}
-
-.contentTwo .card-container .main-card:nth-child(2){
-  background: linear-gradient(rgb(0, 0, 0, 0.4),
-   rgb(0, 0, 0, 0.4)), 
-   url('../../asserts/images/church.jpg');
-}
-
-.contentTwo .card-container .main-card:nth-child(3){
-  background: linear-gradient(rgb(0, 0, 0, 0.4), 
-  rgb(0, 0, 0, 0.4)), 
-  url('../../asserts/images/school.jpg');
-}
-
-.contentTwo .card-container .main-card:nth-child(4){
-  background: linear-gradient(rgb(0, 0, 0, 0.4),
-   rgb(0, 0, 0, 0.4)), 
-   url('../../asserts/images/business.jpg.crdownload');
-}
-
-.contentTwo .card-container .main-card:nth-child(5){
-  background: linear-gradient(rgb(0, 0, 0, 0.4), 
-  rgb(0, 0, 0, 0.4)), 
-  url('../../asserts/images/hospital.webp');
-}
-
-.contentTwo .card-container .main-card:nth-child(1),
-.contentTwo .card-container .main-card:nth-child(2),
-.contentTwo .card-container .main-card:nth-child(3),
-.contentTwo .card-container .main-card:nth-child(4),
-.contentTwo .card-container .main-card:nth-child(5) 
-{
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-}
-
-.contentTwo .card-container 
-.main-card .img-container{
-  height: 100%;
-  position: relative;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.contentTwo .card-container 
-.main-card .img-container{
-  width: 30%;
-}
-
-.contentTwo .card-container 
-.main-card .text-container {
-  width: 70%;
-
-}
-
-.contentTwo .card-container 
-.main-card .img-container img{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-
-
-/* How to get started component styling  */
-.how-to-get-started .card{
-  flex: 1;
-}
-
-
-.apply {
-  transform: scale(4) !important;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 
 
 
-
-/************ Mobile screen styling  ************/
-@media(max-width: 772px) {
-
-  /************ Navbar moblie styling  ************/
+@media(max-width: 772px) { /*** Mobile screen styling  ***/
+  /***** Navbar moblie styling  ****/
   header .hambuger {
     display: block;
   }
@@ -214,17 +127,12 @@ button:hover{
     z-index: 999;
   }
 
-
+  /******* Banner Moblie styling  *******/
   .Banner p{
     text-align: center;
   }
 
   p{
     text-align: justify;
-  }
-
-  .contentTwo .card-container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
   }
 }
