@@ -1,10 +1,10 @@
 import React from 'react'
-import '../admin/AdminDashboard.css'
+import '../Admin/AdminDash.css'
 
-function Dashboard() {
+function AdminDash() {
   return (
     <div>
-        <body class="dark_bg">
+        <section class="dark_bg">
 
 <div id="wrapper">
     <div class="overlay"></div>
@@ -342,7 +342,7 @@ function Dashboard() {
 </div>
 
 
-</body>
+        </section>
 
 
 
@@ -479,4 +479,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default AdminDash

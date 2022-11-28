@@ -10,15 +10,20 @@ import {
 
 // PAGES 
 import Index from './pages/Index/Index'
-import Dashboard from "./pages/Admin/Dashboard";
+import Dashboard from "./pages/User/Dashboard";
+import CreateAccount from "./pages/Forms/CreateAccount";
+import Login from "./pages/Forms/Login";
+import AdminDash from "./pages/Admin/AdminDash";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/admin" element={<Dashboard />} />
-        <Route path="/user" element={<User />} />
+        <Route path="/admin" element={<AdminDash />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/createAccount" element={<CreateAccount />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
