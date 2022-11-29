@@ -41,7 +41,8 @@ const Navbar = ({ backgroundColor, linkColor }) => {
 
         <div className="container d-flex justify-content-between align-items-center py-2 px-lg-5">
             <div style={{width: '50px', height: '50px'}}>
-                <img src={Logo} alt="" className="img-fluid rounded-circle" />
+                {/* <img src={Logo} alt="" className="img-fluid rounded-circle" /> */}
+                <h3>FundMeNaija</h3>
             </div>
 
             {/******************* Desktop screen menu  *******************/}

@@ -1,4 +1,5 @@
 import '../Fundraiser/Fundraiser.css'
+import { Link } from 'react-router-dom'
 
 import img from '../../asserts/donateImages/myhome.svg'
 import img2 from '../../asserts/images/222.jpg'
@@ -11,7 +12,7 @@ const Fundraiser = () => {
 
                 <picture>
                     <img src={img} 
-                        className="img-fluid mx-lg-0 mx-3" 
+                        className="img-fluid mx-lg-0 mx-3 p-2 border" 
                     />
                 </picture>
             </div>
@@ -21,7 +22,9 @@ const Fundraiser = () => {
                     <b className='text-capitalize'>Devine international school</b>
                     <p>Raising for cctv installation, to ensure adequate security of our students.</p>
                     <p className='address text-capitalize'>Address: <span>No 5 Melrose Street</span></p>
-                    <b className='light-cyan-color hover'>View</b>
+                    <Link to={'/details'} className='nav-link'>
+                        <b className='light-cyan-color hover'>View</b>
+                    </Link>
                 </div>
 
             </div>

@@ -11,6 +11,7 @@ import {
 // PAGES 
 import Index from './pages/Index/Index'
 import Donate from "./pages/Donate/Donate";
+import Fundraisedetails from "./pages/FundraiserDetails/Fundraisedetails";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/details" element={<Fundraisedetails />} />
       </Routes>
     </BrowserRouter>
   )
