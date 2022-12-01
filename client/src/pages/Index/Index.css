@@ -72,9 +72,9 @@ header .mobile, .hambuger {
 
 
 /************* Button component styling *************/
-button{
+button, .btn{
   border-radius: 30px !important;
-  background: var(--Orange) !important;
+  background: var(--Orange);
   border: none !important;
   transition: 0.3s;
 }

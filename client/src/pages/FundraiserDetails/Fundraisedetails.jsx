@@ -1,18 +1,20 @@
 import '../FundraiserDetails/Fundraiserdetails.css'
 
+import Navbar from '../../components/Navbar/Navbar'
 import img2 from '../../asserts/images/222.jpg'
 import img from '../../asserts/images/hospital.webp'
-import Header from './Header'
 import { Link } from 'react-router-dom'
-
+import Footer from '../../components/Footer'
 
 const Fundraisedetails = () => {
   return (
 
-    <section className="fundraiser-details Fundraiser p-lg-4 my-lg-4">
+    <>
+    <Navbar  backgroundColor={'white'}/>
+    <section className="fundraiser-details Fundraiser p-lg-4 my-lg-5">
         <div className="container bg-white p-lg-5 px-4 py-5">
 
-            <div className="col-md-9">
+            <div className="col-md-9 my-4">
 
                 <div className="d-lg-flex align-items-center">
                     <div className="fundraiser-img">
@@ -21,16 +23,19 @@ const Fundraisedetails = () => {
 
                     <div className="mx-4">
                         <div className="fundraiser-name col-md-12 text-truncate">
-                            <b className='text-capitalize'>Devine international school</b>
+                            <span className='d-flex flex-column'>
+                                <h2 className='text-capitalize'>Devine international school</h2>
+                                <h4>Estimated amount: <span>100,000</span></h4>
+                            </span>
                             <p className='address text-capitalize'>Address: <span>No 5 Melrose Street</span></p>
-                            {/* <Link to={'/details'} className='nav-link'>
-                                <b className='light-cyan-color hover'></b>
-                            </Link> */}
                         </div>
                     </div>
-
-
                 </div>
+                <Link to={'/details'} className="nav-link my-4">
+                    <button  className='nav-link py-3 px-5 col-md-6'>
+                        <b className='hover'>Donate fund</b>
+                    </button>
+                </Link>
 
                 <div className="fund-title my-5">
                     <h1 className="display-6 my-5 ">Raising for cctv installation, to ensure adequate security of our students.</h1>
@@ -38,7 +43,7 @@ const Fundraisedetails = () => {
                 </div>
 
 
-                <div className="img-container d-lg-flex" style={{position: 'relative', height: '400px'}}>
+                <div className="img-container d-lg-flex">
                     <img src={img2} alt="" className="img-fluid" />
                 </div>
             </div>
@@ -46,7 +51,10 @@ const Fundraisedetails = () => {
 
         </div>
 
+
     </section>
+    <Footer />
+    </>
 
 
 
