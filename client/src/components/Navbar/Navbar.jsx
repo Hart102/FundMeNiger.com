@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../asserts/images/donation.jpg'
+import Logo from '../../asserts/images/logo.jpg'
 
 const Navbar = ({ backgroundColor, linkColor }) => {
     const elementSelector = (element) => document.querySelector(element)
@@ -40,9 +40,15 @@ const Navbar = ({ backgroundColor, linkColor }) => {
     <header className='shadow-sm' style={{background: backgroundColor}}>
 
         <div className="container d-flex justify-content-between align-items-center py-2 px-lg-5">
-            <div style={{width: '50px', height: '50px'}}>
-                {/* <img src={Logo} alt="" className="img-fluid rounded-circle" /> */}
-                <h3>FundMeNaija</h3>
+            <div style={{width: '50px', height: '50px', position: 'relative'}}>
+                <img src={Logo} alt="logo" className="img-fluid" 
+                    style={{
+                        position: 'absolute', 
+                        width: '100%', 
+                        height: '100%', 
+                        borderRadius: '100px'
+                    }}
+                />
             </div>
 
             {/******************* Desktop screen menu  *******************/}

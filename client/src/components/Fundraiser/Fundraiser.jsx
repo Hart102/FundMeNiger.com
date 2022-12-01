@@ -17,17 +17,18 @@ const Fundraiser = () => {
                 </picture>
             </div>
 
-            <div className="col-md-8 mx-4">
-                <div className="fundraiser-name col-md-12 text-truncate">
+            <div className="col-md-8 m-4">
+                <div className="fundraiser-name col-md-12 text-truncate1">
                     <b className='text-capitalize'>Devine international school</b>
                     <p>Raising for cctv installation, to ensure adequate security of our students.</p>
-                    <p className='address text-capitalize'>Address: <span>No 5 Melrose Street</span></p>
+                    <b>Estimated amount: <span>100,000</span></b>
+                    <p className='address text-capitalize'>Address: <span>no 5 Melrose Street</span></p>
                     <Link to={'/details'} className='nav-link'>
-                        <b className='light-cyan-color hover'>View</b>
+                        <button className='text-white hover px-5 py-2 col-md-5'>View</button>
                     </Link>
                 </div>
-
             </div>
+
         </div>
 
         <div className="d-flex">
